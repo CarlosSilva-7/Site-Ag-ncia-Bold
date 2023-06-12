@@ -1,0 +1,403 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;;
+}
+.center{
+    display: flex;
+    max-width: 1100px;
+    padding: 0 2%; /* superior, horizontal, vertical, esquerda*/
+    margin: 0 auto;/* superior, horizontal, vertical, esquerda*/
+    flex-wrap: wrap;
+}
+section.main{
+    background-image: url(/images/HERO\ BACKGROUND.svg);
+    background-position: center;
+    background-size: cover;
+    min-height: 700px;
+    padding: 20px 0 80px 0; /* superior, horizontal, vertical, esquerda*/
+}
+.menu{
+    display: flex;
+    width: 100%;
+}
+.logo-menu{
+    width:50%;
+}
+.items-menu{
+    width:50%;
+    text-align: right;
+}
+.items-menu a {
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 10px;
+}
+.items-menu a:hover{
+    border-bottom: 2px solid yellow; /* ao passar o mouse ficará com um sublinhado em amarelo*/
+}
+.items-menu a.contact-btn{
+    background-color: rgba(14, 14, 136, 0.396);
+    padding: 10px 10px;
+    border-radius: 10px;
+}
+.items-menu a.contact-btn:hover{
+    border: 0;
+}
+.mockup{
+    display: block;
+    width: 100%;
+    color: white;
+    text-align: center;
+    padding-top: 100px;
+}
+.mockup h1{
+    font-size: 30px;
+}
+.mockup img{
+    max-width: 100%;
+}
+section.marcas{
+    padding: 100px 0;
+}
+section.marcas img{
+    width: 20%;
+}
+section.porque-nos{
+    padding: 40px 0;
+    background-color: rgb(240, 240, 240);
+}
+section.porque-nos > .center > h2{
+    font-size:64px;
+    text-align: center;
+    width: 100%;
+}
+section.porque-nos > .center{
+    max-width: 1280px;
+}
+section.porque-nos > .center > p{
+    font-size:14px;
+    color: rgb(199, 199, 199);
+    text-align: center;
+    width: 100%;
+}
+.diferenciais{
+    display: flex;
+    margin-top: 50px;
+}
+.box-diferenciais{
+    box-shadow: 0 20px 40px #2426721c;
+    width: 31%;
+    margin-right: 2%;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+.box-diferenciais h3{
+    font-size: 28px;
+    color: black;
+    margin: 20px 0;
+}
+.box-diferenciais p{
+    font-size:13px;
+    color:#7e92ac;
+    margin-bottom: 20px ;
+}
+section.cta{
+    background-image: url('images/banner-img.svg');
+    background-size: cover;
+    background-position: center;
+    padding:20px 10px;
+    min-height:200px;
+    text-align: center;
+    color:white;
+}
+section.cta h2, section.cta h4{
+font-weight: normal;
+margin: 10px 0;
+}
+section.cta h2{
+    font-size: 38px;
+}
+section.cta a{
+    display: inline-block;
+    padding: 15px 28px ;
+    background-color: yellow;
+    border-radius: 7px;
+    text-decoration: none;
+    color: blue;
+}
+section.beneficios .center{
+    max-width: 1280px;
+}
+.beneficios{
+    padding: 80px 30px;
+}
+.list h2{
+    font-size: 40px;
+    margin: 20px;
+}
+.list span{
+    display: inline-block;
+    width: calc(100% - 70px);
+}
+.list img{
+    width: 70px;
+    display: inline-block;
+    vertical-align: middle;/*responsável por alinhar imagem verticalmente ao texto*/
+}
+.list{
+    width: 50%;
+}
+section.beneficios a{
+    display: inline-block;
+    padding: 15px 28px ;
+    background-color: blue;
+    border-radius: 7px;
+    text-decoration: none;
+    color: white;
+    margin: 20px;
+}
+.img-beneficios{
+    margin-top: -20px;
+    width: 50%;
+}
+.img-beneficios img{/*responsivo para telas menores*/
+    max-width: 100%;
+}
+section.depoimentos {
+    background-color: #f4f4f6;
+    padding: 40px 0;
+}
+section.depoimentos h1{
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+.container-slider{
+    overflow:hidden;
+}
+.container-slider-single{
+    float: left;
+    background-color: white;
+    padding: 15px;
+    text-align: center;
+    border-radius: 10px;
+}
+.container-slider-single p{
+    color:  #7E92AC;
+    margin: 15px O;
+    padding: 10px;
+    font-size: 14px;
+}
+.slick-slide {
+    margin-left:27px;
+
+  }
+
+  /* the parent */
+  .slick-list {
+    margin-left:-27px;
+  }
+
+/****SLICK SLIDER****/
+
+.slick-dotted ul{
+    display: block;
+	list-style-type: none;
+	text-align: center;
+	position: relative;
+}
+
+.slick-dotted li{
+	display: inline-block;
+	margin: 20px 7px;
+}
+
+.slick-dotted button:focus{
+	outline: 0;
+}
+
+.slick-dotted li button{
+	width: 13px;
+	height: 13px;
+	border-radius: 8px;
+	color: #d8d8d8;
+	border-width: 0;
+	background: #d8d8d8;
+	opacity: 1;
+	cursor: pointer;
+}
+
+li.slick-active button{
+	background: #373855;
+	color: #373855;
+}
+
+.slick-slide:focus { outline:0; }
+/****FIM SLICK SLIDER****/
+section.contato{
+    padding: 40px 0;
+    text-align: center;
+}
+section.contato h1{
+    font-size: 40px;
+    margin: -9px 0 22px 0;
+}
+section.contato form{
+    width: 100%;
+
+}
+.contato input[type=text],
+.contato input[type=email],
+.contato textarea,
+.contato input[type=submit]
+{
+    width:600px;
+    height:40px;
+    background: #f5f7fb;
+    border: 1px solid #c3cce8;
+    border-radius: 8px;
+    padding: 8px;
+    margin: 5px;
+}
+textarea{
+    resize: vertical;
+    min-height: 120px;
+}
+.contato input[type=submit]{
+
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    margin-bottom: 60px;
+}
+footer{
+    padding: 10px 0;
+    background: blue;
+    color: white;
+}
+.text-area{
+    width: 50%;
+    padding: 8px 0;
+}
+.items-menu-mobile{
+    display: none;
+    text-align: right;
+    width: 50%;
+}
+.items-menu-mobile i{
+    color:white;
+    font-size: 25px;
+    cursor: pointer;
+    margin: 12px 10px;
+}
+@media screen and (max-width: 768px) /*responsivo para mobile */ {
+    .diferenciais{
+        flex-wrap: wrap;
+    }
+    .box-diferenciais{
+        width:100%;
+        margin-right: 0;
+    }
+    section.marcas .center{
+        margin-top: -135px;
+        margin-bottom: -60px;
+        flex-wrap:nowrap;/*faz com que os items não quebrem a seqência mesmo que isso faça eles transbordarem a section*/
+        flex-direction: column;/*faz com que os items dentro da section fiquem em coluna*/
+        align-items:center;
+    } 
+    section.marcas img{
+        max-width: 200px;
+        width: 100%;
+    }
+    section.porque-nos > .center > h2{
+        text-justify: auto;
+        font-size:40px;
+        text-align: center;
+        width: 100%;
+    }
+    .list, .img-beneficios{
+        width: 100%;
+        align-items: center;
+        margin: 5px 0;
+    }
+    section.beneficios {
+        align-items: center;
+    }
+    div.list span{
+        text-align: left;
+
+    }
+    div.list{
+        text-align: center;
+    } 
+    .list h2{
+        font-size: 30px;
+        margin-top: -25px;
+        margin-bottom: 25px;
+    }
+    .contato input[type=text],
+    .contato input[type=email],
+    .contato textarea,
+    .contato input[type=submit]
+    {
+        width:95%;
+        height:40px;
+        border: 1px solid #c3cce8;
+        border-radius: 8px;
+        padding: 8px;
+        margin:  5px;
+
+    }
+    footer .items-menu{
+        width:100% ;
+        text-align: center;
+    }
+    footer .items-menu a{
+        margin: 10px 0;
+        display: block;
+        text-align: center;
+    }
+    .text-area{
+        width: 100%;
+        text-align: center;
+        padding: 18px 0;
+        
+    }
+    .items-menu-mobile{
+        display: block;
+    }
+    section.main .items-menu{
+        display: none;
+    }
+    .menu-mobile{
+        position: absolute;
+        left: 0;
+        top: 50;
+        background-color: white;
+        width: 100%;
+        padding: 20px 0;
+        transition: 1s;
+        opacity: 0;
+    }
+    .show{
+        opacity: 1;
+        display: block;
+    }
+    .hide{
+        opacity: 0;
+    }
+    .menu-mobile a{
+        text-align: center;
+        display: block;
+        margin: 10px 0;
+        color: rgb(80, 80, 80);
+        text-decoration: none;
+        font-weight: bold;
+        cursor: pointer;
+    }
+}
